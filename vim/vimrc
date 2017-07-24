@@ -1,0 +1,93 @@
+set nocompatible
+
+"colorscheme zenburn
+let g:solarized_visibility = "high"
+let g:solarized_contrast = "high"
+let g:solarized_termcolors = 256
+colorscheme zenburn
+
+filetype off
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+Plugin 'L9'
+Plugin 'scrooloose/nerdTree'
+" Disable the scrollbars (NERDTree)
+" set guioptions-=r
+" set guioptions-=L
+" Keep NERDTree window fixed between multiple toggles
+set winfixwidth
+
+Plugin 'CSApprox'
+Plugin 'mileszs/ack.vim'
+Plugin 'bling/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'garbas/vim-snipmate'
+"Plugin 'Lokaltog/vim-powerline'
+
+" Optional:
+Plugin 'honza/vim-snippets'
+" PowerShell highliting
+Plugin 'https://github.com/PProvost/vim-ps1.git'
+Plugin 'ntpeters/vim-better-whitespace'
+"Plugin 'nathanaelkane/vim-indent-guides'
+
+call vundle#end() 
+
+"filetype plugin indent on
+
+" Airline config
+let g:airline_powerline_fonts = 1
+set laststatus=2
+"let g:airline_left_sep= ">"
+"let g:airline_right_sep="<"
+"let g:airline_symbols.branch="|"
+"if !exists('g:airline_symbols')
+"  let g:airline_symbols = {}
+"endif
+
+" unicode symbols
+"let g:airline_left_sep = '»'
+"let g:airline_left_sep = '>'
+"let g:airline_right_sep = '«'
+"let g:airline_right_sep = '<'
+"let g:airline_symbols.branch = '|'
+"let g:airline_symbols.whitespace = 'Ξ'
+
+" display open buffers in tabline
+let g:airline#extensions#tabline#enabled = 1
+"let g:airline_theme='solarized'
+
+" Buttons remap
+map <C-n> :NERDTreeToggle<CR>
+
+" Syntax on by default
+syntax on
+
+" Line number
+set relativenumber
+set number
+
+" Fix remap ru keyboard
+" set keymap=russian-jcukenwin
+set iminsert=0
+set imsearch=0
+highlight lCursor guifg=NONE guibg=Cyan
+" Indent guids enable
+" let g:indent_guides_enable_on_vim_startup = 0
+" let g:indent_guides_space_guides = 1
+" let g:indent_guides_start_level = 1
+
+"set background=dark

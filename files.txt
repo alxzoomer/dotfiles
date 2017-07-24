@@ -1,0 +1,19 @@
+##.asdf
+##.atom: apm install sync-settings
+##.vscode: ext install code-settings-sync
+##.oh-my-zsh #https://github.com/robbyrussell/oh-my-zsh
+##.pyenv
+##.rbenv
+
+# Directories
+.custom # two submodules zsh-peco-history and zsh-autosuggestions
+.local/share/mc/skins
+.config/mc
+.vim/colors
+
+# Files
+.gitconfig
+.gitignore_global
+.tmux.conf
+.vimrc # https://github.com/VundleVim/Vundle.vim#quick-start
+.zshrc
