@@ -8,6 +8,7 @@ declare -a FILES_TO_SYMLINK=(
 
   'shell/zshrc'
   'shell/tmux.conf'
+  'shell/psqlrc'
 
   'mc/hotlist:.config/mc/hotlist'
   'mc/ini:.config/mc/ini'

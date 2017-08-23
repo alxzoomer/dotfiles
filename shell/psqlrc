@@ -1,0 +1,3 @@
+\set PROMPT1 '%M:%> %n@%/%R%#%x '
+
+\set drop_con 'SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = current_database() AND pid <> pg_backend_pid();';
