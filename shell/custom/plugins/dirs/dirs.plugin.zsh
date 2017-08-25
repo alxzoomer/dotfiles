@@ -2,6 +2,7 @@ alias prj="cd ~/projects"
 alias spr="cd ~/projects/steritech-portal"
 #alias spr="cd ~/projects/mountain-khakis"
 alias meld="/Applications/Meld.app/Contents/MacOS/Meld"
+alias rmorig="find . -name '*.orig' -delete"
 
 # example: extract file
 extract () {

@@ -24,10 +24,11 @@ function dev_db_name() {
     echo "${repo_name}_${branch}"
   fi
 }
+alias pgdc='psql -d `dev_db_name` -c "SELECT pg_terminate_backend(pg_stat_activity.pid) FROM pg_stat_activity WHERE pg_stat_activity.datname = current_database() AND pid <> pg_backend_pid();"'
 alias pgd='dropdb -w `dev_db_name`'
 alias pgrs='pg_restore --no-owner -v -d `dev_db_name`'
 alias pgr='pg_restore --no-owner -v -j 9 -d `dev_db_name`'
 alias pgc='createdb -O postgres `dev_db_name`'
 alias pgsr='psql -w `dev_db_name` < '
 
-alias pgall='pgd && pgc && pgr'
+alias pgall='pgdc; pgd; pgc && pgr'
