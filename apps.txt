@@ -1,0 +1,89 @@
+Android Studio.app
+App Store.app
+Atom.app
+Automator.app
+Battle.net.app
+Beyond Compare.app
+Calculator.app
+Calendar.app
+Cerebro.app
+Chess.app
+Contacts.app
+Cyberduck.app
+DVD Player.app
+Dashboard.app
+Dictionary.app
+DiffMerge.app
+Docker.app
+Dropbox.app
+Elmedia Player.app
+FaceTime.app
+Firefox.app
+Firefox53.app
+Folx.app
+Font Book.app
+FreeMind.app
+Game Center.app
+GlassFactory.app
+Google Chrome.app
+Google Drive.app
+Image Capture.app
+InsomniaX.app
+Karabiner.app
+Keynote.app
+Kitematic (Beta).app
+Launchpad.app
+LibreOffice.app
+Mail.app
+Maps.app
+MediaHuman Audio Converter.app
+Medis.app
+Meld.app
+Messages.app
+Mission Control.app
+Monosnap.app
+Notes.app
+Numbers.app
+Pages.app
+Pencil.app
+Photo Booth.app
+Photos.app
+Preview.app
+QuickTime Player.app
+Reminders.app
+Retinizer.app
+RubyMine.app
+SQLPro for Postgres.app
+SQLiteStudio.app
+Safari.app
+Skype.app
+Slack.app
+SourceTree.app
+Spectacle.app
+StarCraft
+Steam.app
+Stickies.app
+System Preferences.app
+TextEdit.app
+Thunderbird.app
+Time Machine.app
+TorBrowser.app
+Transmission.app
+UMLDesigner.app
+Utilities
+VOX.app
+VirtualBox.app
+Visual Studio Code.app
+Wunderlist.app
+Xcode.app
+Xcode7.3.1
+XnViewMP.app
+handyPrint.app
+iBooks.app
+iTerm.app
+iTunes.app
+pgAdmin3.app
+smcFanControl.app
+yEd.app
+zoom.us.app
+zoomusLauncher.app
