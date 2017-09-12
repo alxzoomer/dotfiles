@@ -44,6 +44,8 @@ Plugin 'https://github.com/PProvost/vim-ps1.git'
 Plugin 'ntpeters/vim-better-whitespace'
 "Plugin 'nathanaelkane/vim-indent-guides'
 
+Plugin 'posva/vim-vue'
+
 call vundle#end() 
 
 "filetype plugin indent on
