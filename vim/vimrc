@@ -45,6 +45,7 @@ Plugin 'ntpeters/vim-better-whitespace'
 "Plugin 'nathanaelkane/vim-indent-guides'
 
 Plugin 'posva/vim-vue'
+Plugin 'digitaltoad/vim-pug'
 
 call vundle#end() 
 
