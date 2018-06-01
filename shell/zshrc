@@ -5,7 +5,9 @@ OS=$(~/dotfiles/utils/detectos.sh)
 
 # Linux only
 if [ "${OS}" = "LINUX" ] ; then
-  export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
+  PATH="$HOME/.linuxbrew/bin:$PATH"
+  export MANPATH="$(brew --prefix)/share/man:$MANPATH"
+  export INFOPATH="$(brew --prefix)/share/info:$INFOPATH"
 fi
 
 # Path to your oh-my-zsh installation.
@@ -182,9 +184,3 @@ fi
 ## Mac OS Only END
 
 export PATH="/usr/local/sbin:$PATH"
-
-## Linux Only
-if [ "${OS}" = "LINUX" ] ; then
-  export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
-  export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
-fi
