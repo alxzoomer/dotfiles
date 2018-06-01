@@ -13,7 +13,7 @@
 Install `git` and `zsh`.
 ```sh
 sudo apt-get update
-sudo apt-get install git zsh
+sudo apt-get install git zsh build-essential file
 ```
 
 # Common
