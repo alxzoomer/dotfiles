@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Backup all files before set-up
+./backup.sh
+
 dir=~/dotfiles
 target_dir=$HOME
 
@@ -46,6 +50,10 @@ link_file() {
   local sourceFile="$dir/$(get_from_name $1)"
   local targetFile="$target_dir/$(get_to_name $1)"
   mkdir -p "$(dirname $targetFile)"
+  if [ -e $targetFile ]; then
+    echo "Remove target file or directory $targetFile"
+    rm -rf $targetFile
+  fi
   echo "Link from $sourceFile to $targetFile"
   ln -s $sourceFile $targetFile
 }
