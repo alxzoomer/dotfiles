@@ -11,7 +11,7 @@ if [ "${OS}" = "LINUX" ] ; then
 sudo apt-get update
 sudo apt-get -y install git zsh build-essential file zsh
 
-git clone https://github.com/alxzoomer/dotfiles.git ~/dotfiles
+git clone -b unified https://github.com/alxzoomer/dotfiles.git ~/dotfiles
 . ~/dotfiles/utils/install_ubuntu.sh
 fi
 
