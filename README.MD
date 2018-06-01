@@ -43,7 +43,6 @@ Follow instructions on [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) gi
 cd
 git clone --recursive git@github.com:alxzoomer/dotfiles.git
 cd dotfiles
-chmod +x setup.sh
 ./setup.sh
 ```
 

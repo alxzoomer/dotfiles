@@ -4,7 +4,7 @@
 OS=$(~/dotfiles/utils/detectos.sh)
 
 # Linux only
-if [ "${OS}" = "LINUX"] ; then
+if [ "${OS}" = "LINUX" ] ; then
   export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 fi
 
@@ -55,7 +55,7 @@ ZSH_THEME="spaceship"
 
 # Should be placed before nvm plugins
 # Mac OS only
-if [ "${OS}" = "OSX"] ; then
+if [ "${OS}" = "OSX" ] ; then
   export NVM_DIR="$HOME/.nvm"
   . "/usr/local/opt/nvm/nvm.sh"
 fi
@@ -68,12 +68,12 @@ ZSH_CUSTOM=$HOME/.custom
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
 # Mac OS only
-if [ "${OS}" = "OSX"] ; then
+if [ "${OS}" = "OSX" ] ; then
   plugins=(asdf git bundler osx rake ruby railsex pgex heroku dirs docker docker-compose nvm yarn tmux zsh-autosuggestions fasd zsh-peco-history)
 fi
 
 # Linux only
-if [ "${OS}" = "LINUX"] ; then
+if [ "${OS}" = "LINUX" ] ; then
   plugins=(git bundler linux rake ruby railsex pgex heroku dirs docker docker-compose tmux zsh-autosuggestions zsh-peco-history)
 fi
 
@@ -161,7 +161,7 @@ SPACESHIP_VI_MODE_NORMAL="[N]"
 #. ~/Library/Python/2.7/lib/python/site-packages/powerline/bindings/zsh/powerline.zsh
 
 #Mac OS Only START
-if [ "${OS}" = "OSX"] ; then
+if [ "${OS}" = "OSX" ] ; then
   test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
   # Android SDK Root
@@ -181,7 +181,7 @@ fi
 export PATH="/usr/local/sbin:$PATH"
 
 ## Linux Only
-if [ "${OS}" = "LINUX"] ; then
+if [ "${OS}" = "LINUX" ] ; then
   export MANPATH="/home/linuxbrew/.linuxbrew/share/man:$MANPATH"
   export INFOPATH="/home/linuxbrew/.linuxbrew/share/info:$INFOPATH"
 fi
