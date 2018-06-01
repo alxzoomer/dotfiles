@@ -43,3 +43,29 @@ cd dotfiles
 chmod +x setup.sh
 ./setup.sh
 ```
+
+# Update submodules
+```sh
+cd ~/dotfiles/shell/custom/plugins/zsh-autosuggestions
+git pull origin master
+cd ~/dotfiles
+git status
+git add shell/custom/plugins/zsh-autosuggestions
+git commit -m "Update zsh-autosuggestions"
+
+cd ~/dotfiles/shell/custom/plugins/zsh-peco-history
+git pull origin master
+cd ~/dotfiles
+git status
+git add shell/custom/plugins/zsh-peco-history
+git commit -m "Update zsh-peco-history"
+
+cd ~/dotfiles/shell/custom/plugins/spaceship-prompt
+git pull origin master
+cd ~/dotfiles
+git status
+git add shell/custom/plugins/spaceship-prompt
+git commit -m "Update spaceship-prompt"
+
+git push
+```
