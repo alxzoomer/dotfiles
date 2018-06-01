@@ -18,6 +18,9 @@ sudo apt-get install git zsh build-essential file
 
 # Common
   * [Vim Vundle](https://github.com/VundleVim/Vundle.vim#quick-start)
+  * [LinuxBrew](http://linuxbrew.sh/)
+  * [PECO](https://github.com/peco/peco)
+
 
 # Configure GIT
 ```sh
