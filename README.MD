@@ -1,5 +1,11 @@
 # My dotfiles
 
+# Install dotfiles
+
+```sh
+curl https://raw.githubusercontent.com/alxzoomer/dotfiles/unified/install.sh | bash
+```
+
 # Prerequisites
 
 ## Mac OS
@@ -24,13 +30,7 @@ sudo apt-get install git zsh build-essential file
 
 # Configure GIT
 ```sh
-curl https://raw.githubusercontent.com/alxzoomer/dotfiles/master/configure_git.sh --output configure_git.sh
-vim configure_git.sh
-```
-Edit `your_name` and `your_email` fields.
-```sh
-chmod +x configure_git.sh
-./configure_git.sh
+curl https://raw.githubusercontent.com/alxzoomer/dotfiles/master/configure_git.sh | bash -s "Your Name" "Your Email"
 ```
 
 # Installation
