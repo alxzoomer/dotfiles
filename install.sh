@@ -19,5 +19,8 @@ if [ "${OS}" = "OSX" ] ; then
 
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
+brew install git
+brew install zsh
+
 . ~/dotfiles/utils/install_macos.sh
 fi
