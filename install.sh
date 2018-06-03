@@ -13,6 +13,7 @@ sudo apt-get -y install git zsh build-essential file zsh
 
 git clone -b unified https://github.com/alxzoomer/dotfiles.git ~/dotfiles
 . ~/dotfiles/utils/install_ubuntu.sh
+git clone https://github.com/denysdovhan/spaceship-prompt.git ~/dotfiles/shell/custom/themes/spaceship-prompt
 fi
 
 if [ "${OS}" = "OSX" ] ; then
