@@ -14,6 +14,8 @@ sudo apt-get -y install git zsh build-essential file zsh
 git clone -b unified https://github.com/alxzoomer/dotfiles.git ~/dotfiles
 . ~/dotfiles/utils/install_ubuntu.sh
 git clone https://github.com/denysdovhan/spaceship-prompt.git ~/dotfiles/shell/custom/themes/spaceship-prompt
+git clone https://github.com/zsh-users/zsh-autosuggestions.git ~/dotfiles/shell/custom/plugins/zsh-autosuggestions
+git clone https://github.com/jimeh/zsh-peco-history.git ~/dotfiles/shell/custom/plugins/zsh-peco-history
 fi
 
 if [ "${OS}" = "OSX" ] ; then

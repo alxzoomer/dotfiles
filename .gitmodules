@@ -1,6 +1,1 @@
-[submodule "shell/custom/plugins/zsh-autosuggestions"]
-	path = shell/custom/plugins/zsh-autosuggestions
-	url = git@github.com:zsh-users/zsh-autosuggestions.git
-[submodule "shell/custom/plugins/zsh-peco-history"]
-	path = shell/custom/plugins/zsh-peco-history
-	url = git@github.com:jimeh/zsh-peco-history.git
+
