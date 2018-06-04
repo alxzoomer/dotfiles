@@ -23,7 +23,7 @@ if [ "${OS}" = "LINUX" ] ; then
     echo "Install ubuntu packages"
     sudo apt-get update
     # Minimalistic package set for ubuntu
-    sudo apt-get -y install git zsh build-essential file tmux mc
+    sudo apt-get -y install git zsh build-essential file tmux mc vim
   fi
 
   if [ "${OS_TYPE}" = "ANDROID" ] ; then
@@ -42,6 +42,7 @@ if [ "${OS}" = "OSX" ] ; then
   brew install git
   brew install zsh
   brew install peco
+  brew install vim
 fi
 
 # Dotfiles itself
