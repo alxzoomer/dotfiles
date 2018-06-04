@@ -12,7 +12,6 @@ your_email=$2
 git config --global color.ui true
 git config --global user.name "$your_name"
 git config --global user.email "$your_email"
-cp ~/.gitconfig ~/.gitconfig.local
 ssh-keygen -t rsa -C "$your_email"
 
 cat ~/.ssh/id_rsa.pub

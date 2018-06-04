@@ -41,6 +41,7 @@ if [ "${OS}" = "OSX" ] ; then
   # Minimalistic package set for MacOS X
   brew install git
   brew install zsh
+  brew install peco
 fi
 
 # Dotfiles itself
