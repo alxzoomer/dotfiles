@@ -56,9 +56,11 @@ git clone https://github.com/VundleVim/Vundle.vim.git $VIM_ROOT/bundle/Vundle.vi
 # Install Oh my ZSH
 git clone https://github.com/robbyrussell/oh-my-zsh.git $INSTALL_ROOT/.oh-my-zsh
 
+. $DOTFILES_ROOT/setup.sh
+
 # Final step change default shell to ZSH
 if [ "${OS_TYPE}" = "ANDROID" ] ; then
   chsh -s $PREFIX/bin/zsh
 else
   chsh -s /bin/zsh
-end
+fi
