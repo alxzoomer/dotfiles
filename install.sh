@@ -64,8 +64,4 @@ if [ -d "$HOME/.vim/bundle/Vundle.vim" ] ; then
 fi
 
 # Final step change default shell to ZSH
-if [ "${OS_TYPE}" = "ANDROID" ] ; then
-  chsh -s $PREFIX/bin/zsh
-else
-  chsh -s /bin/zsh
-fi
+chsh -s $(which zsh)
