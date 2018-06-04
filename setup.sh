@@ -1,9 +1,12 @@
 #!/bin/bash
 
 # Backup all files before set-up
+script_path="`( cd \"$(dirname \"$0\")\" && pwd )`"
+pushd $script_path
+
 ./backup.sh
 
-dir=~/dotfiles
+dir=$script_path
 target_dir=$HOME
 
 declare -a FILES_TO_SYMLINK=(
@@ -74,3 +77,5 @@ main() {
 }
 
 main
+
+popd
