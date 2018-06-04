@@ -1,5 +1,12 @@
 #!/bin/bash
-dir=~/dotfiles
+
+# Backup all files before set-up
+SCRIPT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+pushd $SCRIPT_PATH
+. ./backup.sh
+popd
+
+dir=$SCRIPT_PATH
 target_dir=$HOME
 
 declare -a FILES_TO_SYMLINK=(
@@ -46,6 +53,10 @@ link_file() {
   local sourceFile="$dir/$(get_from_name $1)"
   local targetFile="$target_dir/$(get_to_name $1)"
   mkdir -p "$(dirname $targetFile)"
+  if [ -e $targetFile ]; then
+    echo "Remove target file or directory $targetFile"
+    rm -rf $targetFile
+  fi
   echo "Link from $sourceFile to $targetFile"
   ln -s $sourceFile $targetFile
 }

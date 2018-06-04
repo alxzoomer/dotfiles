@@ -1,9 +1,0 @@
-[submodule "shell/custom/plugins/zsh-autosuggestions"]
-	path = shell/custom/plugins/zsh-autosuggestions
-	url = git@github.com:zsh-users/zsh-autosuggestions.git
-[submodule "shell/custom/plugins/zsh-peco-history"]
-	path = shell/custom/plugins/zsh-peco-history
-	url = git@github.com:jimeh/zsh-peco-history.git
-[submodule "shell/custom/plugins/spaceship-prompt"]
-	path = shell/custom/themes/spaceship-prompt
-	url = git@github.com:denysdovhan/spaceship-prompt.git
