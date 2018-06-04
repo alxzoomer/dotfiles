@@ -1,6 +1,6 @@
 #!/bin/bash
 dir=$HOME
-dir_backup=~/dotfiles_old_$(date +%Y_%m_%d_%H-%M-%S)
+dir_backup=$HOME/dotfiles_old_$(date +%Y_%m_%d_%H-%M-%S)
 
 declare -a FILES_TO_SYMLINK=(
   'git/gitconfig'
@@ -72,3 +72,5 @@ main() {
 }
 
 main
+
+popd $script_path

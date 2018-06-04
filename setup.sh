@@ -3,8 +3,8 @@
 # Backup all files before set-up
 script_path="`( cd \"$(dirname \"$0\")\" && pwd )`"
 pushd $script_path
-
-./backup.sh
+. ./backup.sh
+popd
 
 dir=$script_path
 target_dir=$HOME
@@ -77,5 +77,3 @@ main() {
 }
 
 main
-
-popd
