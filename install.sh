@@ -61,7 +61,7 @@ git clone https://github.com/robbyrussell/oh-my-zsh.git $INSTALL_ROOT/.oh-my-zsh
 # Install VIM Plugins and exit when Vundle.vim is in default directory
 if [ -d "$HOME/.vim/bundle/Vundle.vim" ] ; then
   echo "Installing VIM plugins"
-  vim -es -c PluginInstall
+  vim -T dumb -n -c "set nomore" -c "PluginInstall" -c "qall"
   echo "VIM plugins installed"
 fi
 
