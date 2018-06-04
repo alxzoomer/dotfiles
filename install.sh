@@ -56,9 +56,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git $VIM_ROOT/bundle/Vundle.vi
 # Install Oh my ZSH
 git clone https://github.com/robbyrussell/oh-my-zsh.git $INSTALL_ROOT/.oh-my-zsh
 
-pushd $DOTFILES_ROOT
 . $DOTFILES_ROOT/setup.sh
-popd
 
 # Install VIM Plugins and exit when Vundle.vim is in default directory
 if [ -d "$HOME/.vim/bundle/Vundle.vim" ] ; then
