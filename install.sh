@@ -64,4 +64,5 @@ if [ -d "$HOME/.vim/bundle/Vundle.vim" ] ; then
 fi
 
 # Final step change default shell to ZSH
+echo "Switch shell to ZSH"
 chsh -s $(which zsh)
