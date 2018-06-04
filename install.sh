@@ -45,7 +45,7 @@ if [ "${OS}" = "OSX" ] ; then
 fi
 
 # Dotfiles itself
-git clone -b unified https://github.com/alxzoomer/dotfiles.git $DOTFILES_ROOT
+git clone https://github.com/alxzoomer/dotfiles.git $DOTFILES_ROOT
 # Spaceship theme for Oh my ZSH
 git clone https://github.com/denysdovhan/spaceship-prompt.git $DOTFILES_ROOT/shell/custom/themes/spaceship-prompt
 # ZSH autosuggestion custom plugin
