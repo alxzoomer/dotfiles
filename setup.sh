@@ -1,12 +1,12 @@
 #!/bin/bash
 
 # Backup all files before set-up
-script_path="`( cd \"$(dirname \"$0\")\" && pwd )`"
-pushd $script_path
+SCRIPT_PATH="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+pushd $SCRIPT_PATH
 . ./backup.sh
 popd
 
-dir=$script_path
+dir=$SCRIPT_PATH
 target_dir=$HOME
 
 declare -a FILES_TO_SYMLINK=(

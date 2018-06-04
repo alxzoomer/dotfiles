@@ -72,5 +72,3 @@ main() {
 }
 
 main
-
-popd $script_path
