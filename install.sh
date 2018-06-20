@@ -20,10 +20,20 @@ if [ "${OS}" = "LINUX" ] ; then
   echo "OS is ${OS} and OS type is ${OS_TYPE}"
 
   if [ "${OS_TYPE}" = "LINUX" ] ; then
-    echo "Install ubuntu packages"
-    sudo apt-get update
-    # Minimalistic package set for ubuntu
-    sudo apt-get -y install git zsh build-essential file tmux mc vim
+    LINUX_ID=`awk -F '=' '/^ID=/ { print $2 }' /etc/os-release | tr -d \"`
+    if [ "${LINUX_ID}" = "centos" ] ; then
+      echo "Install centos packages"
+      sudo yum update
+      # Minimalistic package set for ubuntu
+      sudo yum -y install git zsh file tmux mc vim
+      sudo yum groupinstall 'Development Tools'
+    fi
+    if [ "${LINUX_ID}" = "ubuntu" ] ; then
+      echo "Install ubuntu packages"
+      sudo apt-get update
+      # Minimalistic package set for ubuntu
+      sudo apt-get -y install git zsh build-essential file tmux mc vim
+    fi
   fi
 
   if [ "${OS_TYPE}" = "ANDROID" ] ; then
