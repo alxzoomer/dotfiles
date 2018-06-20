@@ -31,7 +31,7 @@ if [ "${OS}" = "LINUX" ] ; then
       # Download source RPM zsh 5.5.1 from Fefora Core repo
       curl http://dl.fedoraproject.org/pub/fedora/linux/updates/28/Everything/SRPMS/Packages/z/zsh-5.5.1-1.fc28.src.rpm --output ~/zsh-5.5.1-1.fc28.src.rpm
       rpmbuild --rebuild ~/zsh-5.5.1-1.fc28.src.rpm
-      rpm -ivh ~/rpmbuild/RPMS/x86_64/zsh-5.5.1-1.el7.x86_64.rpm
+      sudo rpm -ivh ~/rpmbuild/RPMS/x86_64/zsh-5.5.1-1.el7.x86_64.rpm
       rm -rf ~/rpmbuild
       rm ~/zsh-5.5.1-1.fc28.src.rpm
     fi
