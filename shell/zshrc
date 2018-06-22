@@ -126,7 +126,7 @@ export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 alias rspec_u='bundle exec rspec -t ~type:feature'
 alias rspec_f='bundle exec rspec -t type:feature' 
 alias rspec_fa='bundle exec rake assets:precompile RAILS_ENV=test; bundle exec rspec -t type:feature'
-export EDITOR="/usr/local/bin/vim"
+export EDITOR="$(which vim)"
 
 # Spaceship theme settings START
 # PROMPT
@@ -179,14 +179,17 @@ if [ "${OS}" = "OSX" ] ; then
   export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
   export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
 
-  export PYENV_ROOT="$HOME/.pyenv"
-  eval "$(pyenv init -)"
-
   export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
 
   #source $HOME/.asdf/asdf.sh
   source $HOME/.custom/plugins/asdf/asdf.bash
 fi
 ## Mac OS Only END
+
+if [ -d "~/.pyenv/bin" ] ; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$HOME/.pyenv/bin:$PATH"
+  eval "$(pyenv init -)"
+fi
 
 export PATH="/usr/local/sbin:$PATH"
