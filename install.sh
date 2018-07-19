@@ -25,9 +25,11 @@ if [ "${OS}" = "LINUX" ] ; then
       echo "Install centos packages"
       sudo yum update
       # Minimalistic package set for ubuntu
-      sudo yum -y install git file mc
-      sudo yum groupinstall -y 'Development Tools'
-      sudo yum -y install libcap-devel texi2html texinfo vim
+      sudo yum -y install git file mc vim
+      # Note: uncomment for SF development
+      #sudo yum groupinstall -y 'Development Tools'
+      #sudo yum -y install libcap-devel texi2html texinfo 
+
       # Download source RPM zsh 5.5.1 from Fefora Core repo
       #curl http://dl.fedoraproject.org/pub/fedora/linux/updates/28/Everything/SRPMS/Packages/z/zsh-5.5.1-1.fc28.src.rpm --output ~/zsh-5.5.1-1.fc28.src.rpm
       #rpmbuild --rebuild ~/zsh-5.5.1-1.fc28.src.rpm
@@ -35,9 +37,9 @@ if [ "${OS}" = "LINUX" ] ; then
       #rm -rf ~/rpmbuild
       #rm ~/zsh-5.5.1-1.fc28.src.rpm
       curl http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm -o gf-release-latest.gf.el7.noarch.rpm
-      rpm -Uvh gf-release*rpm
+      sudo rpm -Uvh gf-release*rpm
       rm gf-release-latest.gf.el7.noarch.rpm
-      yum -y --enablerepo=gf-plus install tmux zsh
+      sudo yum -y --enablerepo=gf-plus install tmux zsh
     fi
     if [ "${LINUX_ID}" = "ubuntu" ] ; then
       echo "Install ubuntu packages"
