@@ -23,7 +23,9 @@ if [ "${OS}" = "LINUX" ] ; then
     LINUX_ID=`awk -F '=' '/^ID=/ { print $2 }' /etc/os-release | tr -d \"`
     if [ "${LINUX_ID}" = "centos" ] ; then
       echo "Install centos packages"
-      sudo yum update
+      # Note: Uncomment when required latest packages
+      #sudo yum update
+
       # Minimalistic package set for ubuntu
       sudo yum -y install git file mc vim
       # Note: uncomment for SF development
