@@ -3,13 +3,17 @@ INSTALL_ROOT=$HOME
 DOTFILES_ROOT=$INSTALL_ROOT/dotfiles
 VIM_ROOT=$INSTALL_ROOT/.vim
 
+if [ -z $OSTYPE ] ; then
+  $OSTYPE="$(uname -o)"
+if
+
 case "$OSTYPE" in
   darwin*)  OS=OSX ;; 
   linux*)   OS=LINUX ;;
   *)        OS=unknown ;;
 esac
 
-echo "Install prerequisites"
+echo "Install prerequisites for ${OS}"
 
 if [ "${OS}" = "LINUX" ] ; then
   case "$(uname -o)" in
