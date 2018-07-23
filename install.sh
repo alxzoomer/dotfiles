@@ -5,7 +5,7 @@ VIM_ROOT=$INSTALL_ROOT/.vim
 
 if [ -z $OSTYPE ] ; then
   $OSTYPE="$(uname -o)"
-if
+fi
 
 case "$OSTYPE" in
   darwin*)  OS=OSX ;; 
