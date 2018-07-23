@@ -4,7 +4,7 @@ DOTFILES_ROOT=$INSTALL_ROOT/dotfiles
 VIM_ROOT=$INSTALL_ROOT/.vim
 
 if [ -z $OSTYPE ] ; then
-  $OSTYPE="$(uname -o)"
+  OSTYPE="$(uname -o)"
 fi
 
 case "$OSTYPE" in
