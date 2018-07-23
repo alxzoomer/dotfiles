@@ -10,6 +10,7 @@ fi
 case "$OSTYPE" in
   darwin*)  OS=OSX ;; 
   linux*)   OS=LINUX ;;
+  Linux*)   OS=LINUX ;;
   *)        OS=unknown ;;
 esac
 
