@@ -57,7 +57,7 @@ if [ "${OS}" = "LINUX" ] ; then
     if [ "${LINUX_ID}" = "alpine" ] ; then
       echo "Install alpine packages"
       apk update
-      apk add zsh git zsh tmux mc vim
+      apk add zsh git bash zsh tmux mc vim
     fi
   fi
 
@@ -93,7 +93,7 @@ git clone https://github.com/VundleVim/Vundle.vim.git $VIM_ROOT/bundle/Vundle.vi
 # Install Oh my ZSH
 git clone https://github.com/robbyrussell/oh-my-zsh.git $INSTALL_ROOT/.oh-my-zsh
 
-. $DOTFILES_ROOT/setup.sh
+$(which bash) $DOTFILES_ROOT/setup.sh
 
 # Install VIM Plugins and exit when Vundle.vim is in default directory
 if [ -d "$HOME/.vim/bundle/Vundle.vim" ] ; then
