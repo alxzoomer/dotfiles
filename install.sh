@@ -49,6 +49,11 @@ if [ "${OS}" = "LINUX" ] ; then
       # Minimalistic package set for ubuntu
       sudo apt-get -y install git zsh build-essential file tmux mc vim
     fi
+    if [ "${LINUX_ID}" = "alpine" ] ; then
+      echo "Install alpine packages"
+      apk update
+      apk add zsh git zsh tmux mc vim
+    fi
   fi
 
   if [ "${OS_TYPE}" = "ANDROID" ] ; then
