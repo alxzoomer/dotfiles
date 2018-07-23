@@ -57,7 +57,7 @@ if [ "${OS}" = "LINUX" ] ; then
     if [ "${LINUX_ID}" = "alpine" ] ; then
       echo "Install alpine packages"
       apk update
-      apk add zsh git bash zsh tmux mc vim
+      apk add zsh git bash zsh zsh-vcs tmux mc vim
     fi
   fi
 
