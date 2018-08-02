@@ -32,7 +32,7 @@ if [ "${OS}" = "LINUX" ] ; then
       #sudo yum update
 
       # Minimalistic package set for ubuntu
-      sudo yum -y install git2u file mc vim
+      sudo yum -y install git file mc vim
       # Note: uncomment for SF development
       #sudo yum groupinstall -y 'Development Tools'
       #sudo yum -y install libcap-devel texi2html texinfo 
