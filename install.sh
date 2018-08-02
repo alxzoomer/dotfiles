@@ -32,7 +32,7 @@ if [ "${OS}" = "LINUX" ] ; then
       #sudo yum update
 
       # Minimalistic package set for ubuntu
-      sudo yum -y install git2u file mc vim
+      sudo yum -y install file mc vim
       # Note: uncomment for SF development
       #sudo yum groupinstall -y 'Development Tools'
       #sudo yum -y install libcap-devel texi2html texinfo 
@@ -46,7 +46,10 @@ if [ "${OS}" = "LINUX" ] ; then
       curl http://mirror.ghettoforge.org/distributions/gf/gf-release-latest.gf.el7.noarch.rpm -o gf-release-latest.gf.el7.noarch.rpm
       sudo rpm -Uvh gf-release*rpm
       rm gf-release-latest.gf.el7.noarch.rpm
-      sudo yum -y --enablerepo=gf-plus install tmux zsh
+      sudo rpm -Uvh http://dl.fedoraproject.org/pub/epel/7/x86_64/Packages/e/epel-release-7-11.noarch.rpm
+      sudo yum -y install epel-release
+      sudo rpm -Uvh https://centos7.iuscommunity.org/ius-release.rpm
+      sudo yum -y --enablerepo=gf-plus install tmux zsh git2u
     fi
     if [ "${LINUX_ID}" = "ubuntu" ] ; then
       echo "Install ubuntu packages"
