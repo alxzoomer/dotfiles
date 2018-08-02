@@ -32,11 +32,7 @@ if [ "${OS}" = "LINUX" ] ; then
       #sudo yum update
 
       # Minimalistic package set for ubuntu
-<<<<<<< HEAD
       sudo yum -y install file mc vim
-=======
-      sudo yum -y install git file mc vim
->>>>>>> eaf28c07cfb26965e046f1759283bab2aff32c46
       # Note: uncomment for SF development
       #sudo yum groupinstall -y 'Development Tools'
       #sudo yum -y install libcap-devel texi2html texinfo 
