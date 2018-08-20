@@ -17,7 +17,6 @@ declare -a FILES_TO_SYMLINK=(
   'shell/tmux.conf'
   'shell/psqlrc'
   'shell/tmux-powerlinerc'
-  'shell/custom.sh:.tmux/themes/tmux-powerline/themes'
 
   'mc/hotlist:.config/mc/hotlist'
   'mc/ini:.config/mc/ini'
