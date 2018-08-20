@@ -95,6 +95,8 @@ git clone https://github.com/jimeh/zsh-peco-history.git $DOTFILES_ROOT/shell/cus
 git clone https://github.com/VundleVim/Vundle.vim.git $VIM_ROOT/bundle/Vundle.vim
 # Install Oh my ZSH
 git clone https://github.com/robbyrussell/oh-my-zsh.git $INSTALL_ROOT/.oh-my-zsh
+# Install tmux plugins 
+git clone https://github.com/tmux-plugins/tpm $INSTALL_ROOT/.tmux/plugins/tpm
 
 $(which bash) $DOTFILES_ROOT/setup.sh
 
