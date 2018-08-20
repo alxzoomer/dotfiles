@@ -36,6 +36,8 @@ Plugin 'MarcWeber/vim-addon-mw-utils'
 Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 "Plugin 'Lokaltog/vim-powerline'
+" Buffer switcher https://github.com/jeetsukumaran/vim-buffergator
+Plugin 'jeetsukumaran/vim-buffergator'
 
 " Optional:
 Plugin 'honza/vim-snippets'
