@@ -21,6 +21,7 @@ Plugin 'tpope/vim-fugitive'
 " plugin from http://vim-scripts.org/vim/scripts.html
 Plugin 'L9'
 Plugin 'scrooloose/nerdTree'
+Plugin 'scrooloose/nerdcommenter'
 " Disable the scrollbars (NERDTree)
 " set guioptions-=r
 " set guioptions-=L
