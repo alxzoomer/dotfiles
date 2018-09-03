@@ -40,7 +40,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 "Plugin 'Lokaltog/vim-powerline'
 " Buffer switcher https://github.com/jeetsukumaran/vim-buffergator
-"Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'editorconfig/editorconfig-vim'
 
 " Optional:
@@ -52,6 +52,8 @@ Plugin 'ntpeters/vim-better-whitespace'
 
 Plugin 'posva/vim-vue'
 Plugin 'digitaltoad/vim-pug'
+
+Plugin 'dhruvasagar/vim-zoom'
 
 call vundle#end() 
 
@@ -102,4 +104,8 @@ highlight lCursor guifg=NONE guibg=Cyan
 " let g:indent_guides_start_level = 1
 
 "set background=dark
+let g:buffergator_viewport_split_policy = 'B'
+let g:buffergator_split_size = 10
+let g:buffergator_suppress_keymaps = 1
+map <Leader>b :BuffergatorToggle<CR>
 
