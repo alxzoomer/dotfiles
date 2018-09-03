@@ -1,6 +1,5 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
-
 OS=$(~/dotfiles/utils/detectos.sh)
   
 # Linux only
@@ -83,7 +82,7 @@ fi
 
 # Linux only
 if [ "${OS}" = "LINUX" ] ; then
-  plugins=(git linux railsex pgex heroku dirs docker docker-compose tmux zsh-autosuggestions zsh-peco-history)
+  plugins=(git linux railsex pgex heroku dirs docker docker-compose tmux zsh-autosuggestions zsh-peco-history z)
 fi
 
 source $ZSH/oh-my-zsh.sh

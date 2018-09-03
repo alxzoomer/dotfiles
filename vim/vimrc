@@ -1,9 +1,9 @@
 set nocompatible
 
 "colorscheme zenburn
-let g:solarized_visibility = "high"
-let g:solarized_contrast = "high"
-let g:solarized_termcolors = 256
+"let g:solarized_visibility = "high"
+"let g:solarized_contrast = "high"
+"let g:solarized_termcolors = 256
 colorscheme zenburn
 
 filetype off
@@ -28,6 +28,8 @@ Plugin 'scrooloose/nerdcommenter'
 " Keep NERDTree window fixed between multiple toggles
 set winfixwidth
 
+"Plugin 'dracula/vim'
+Plugin 'ctrlpvim/ctrlp.vim'
 Plugin 'CSApprox'
 Plugin 'mileszs/ack.vim'
 Plugin 'bling/vim-airline'
@@ -38,7 +40,7 @@ Plugin 'tomtom/tlib_vim'
 Plugin 'garbas/vim-snipmate'
 "Plugin 'Lokaltog/vim-powerline'
 " Buffer switcher https://github.com/jeetsukumaran/vim-buffergator
-Plugin 'jeetsukumaran/vim-buffergator'
+"Plugin 'jeetsukumaran/vim-buffergator'
 Plugin 'editorconfig/editorconfig-vim'
 
 " Optional:
@@ -75,13 +77,15 @@ set laststatus=2
 
 " display open buffers in tabline
 let g:airline#extensions#tabline#enabled = 1
-"let g:airline_theme='solarized'
+let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
+"let g:airline_theme='solarizedformatter
 
 " Buttons remap
 map <C-n> :NERDTreeToggle<CR>
 
 " Syntax on by default
 syntax on
+"colorscheme dracula
 
 " Line number
 set relativenumber
@@ -98,3 +102,4 @@ highlight lCursor guifg=NONE guibg=Cyan
 " let g:indent_guides_start_level = 1
 
 "set background=dark
+
