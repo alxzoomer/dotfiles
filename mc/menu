@@ -41,6 +41,9 @@ M       MELD - Diff current directory against other directory
         fi
         /Applications/Meld.app/Contents/MacOS/Meld %d %D
 
+b       bcomp - Diff files or directories in two panels
+        /usr/local/bin/bcomp %d/%f %D/%F
+
 + ! t t
 @       Do something on the current file
         CMD=%{Enter command}
