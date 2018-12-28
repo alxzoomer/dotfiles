@@ -120,8 +120,10 @@ export LANG=en_US.UTF-8
 if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 export PATH="$HOME/.bin:$PATH"
-# REPLACE WITH ACTUAL TOKEN
-export HOMEBREW_GITHUB_API_TOKEN=""
+# REPLACE WITH ACTUAL TOKEN. Create file .token in home dir
+# export HOMEBREW_GITHUB_API_TOKEN=""
+. $HOME/.token
+
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
 alias rspec_u='bundle exec rspec -t ~type:feature'
