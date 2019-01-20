@@ -3,10 +3,16 @@ alias spr="cd ~/projects/steritech-portal"
 #alias spr="cd ~/projects/mountain-khakis"
 alias meld="/Applications/Meld.app/Contents/MacOS/Meld"
 alias rmorig="find . -name '*.orig' -delete"
-alias goenv="export GOPATH=$(cd `dirname $0` && pwd)"
 alias goenvoff="unset GOPATH"
 alias gomod="export GO111MODULE=on"
 alias gomodoff="unset GO111MODULE"
+
+goenv () {
+    export GOPATH=${PWD}
+    echo $PWD
+}
+
+
 # example: extract file
 extract () {
  if [ -f $1 ] ; then
