@@ -1,2 +1,5 @@
 alias rdb='bundle exec rake db:drop db:create db:migrate db:seed cache:flush'
 alias rdbt='bundle exec rake db:drop db:create db:migrate db:seed RAILS_ENV=test'
+alias rspec_u='bundle exec rspec -t ~type:feature'
+alias rspec_f='bundle exec rspec -t type:feature' 
+alias rspec_fa='bundle exec rake assets:precompile RAILS_ENV=test; bundle exec rspec -t type:feature'

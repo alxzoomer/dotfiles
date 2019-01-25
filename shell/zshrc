@@ -78,7 +78,9 @@ ZSH_CUSTOM=$HOME/.custom
 # Add wisely, as too many plugins slow down shell startup.
 # Mac OS only
 if [ "${OS}" = "OSX" ] ; then
-  plugins=(git bundler osx pgex dirs docker docker-compose nvm yarn tmux zsh-autosuggestions fasd zsh-peco-history pyenv rbenv vscode jenv golang)
+  plugins=(git osx pgex dirs docker docker-compose nvm yarn tmux zsh-autosuggestions fasd zsh-peco-history pyenv rbenv vscode jenv golang)
+  # Original MacBookPro plugin set
+  # plugins=(asdf git bundler osx rake ruby railsex pgex heroku dirs docker docker-compose nvm tmux zsh-autosuggestions fasd zsh-peco-history)
 fi
 
 # Linux only
@@ -126,11 +128,11 @@ export PATH="$HOME/.bin:$PATH"
 
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
-alias rspec_u='bundle exec rspec -t ~type:feature'
-alias rspec_f='bundle exec rspec -t type:feature' 
-alias rspec_fa='bundle exec rake assets:precompile RAILS_ENV=test; bundle exec rspec -t type:feature'
 export EDITOR="$(which vim)"
-eval "$(jenv init -)"
+
+if [ -d $HOME/.jenv ] ; then
+  eval "$(jenv init -)"
+fi
 # Spaceship theme settings START
 # PROMPT
 SPACESHIP_CHAR_SYMBOL=' '
@@ -182,7 +184,7 @@ if [ "${OS}" = "OSX" ] ; then
   export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
   export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
 
-  export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
+  #export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
 
   #source $HOME/.asdf/asdf.sh
   #source $HOME/.custom/plugins/asdf/asdf.bash

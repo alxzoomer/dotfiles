@@ -2,7 +2,7 @@
   ui = true
 # Use separate file for username / github token / etc
 [include]
-  path = ~/.gitconfig.local
+  path = .gitconfig.local
 [core]
   excludesfile = ~/.gitignore_global
   autocrlf = input
