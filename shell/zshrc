@@ -1,7 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 OS=$(~/dotfiles/utils/detectos.sh)
-  
+
+[[ $UID = 0 ]] && ZSH_DISABLE_COMPFIX=true
+
 # Linux only
 if [ "${OS}" = "LINUX" ] ; then
   case "$(uname -o)" in
@@ -124,7 +126,14 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 export PATH="$HOME/.bin:$PATH"
 # REPLACE WITH ACTUAL TOKEN. Create file .token in home dir
 # export HOMEBREW_GITHUB_API_TOKEN=""
-. $HOME/.token
+if [ -f $HOME/.token ] ; then
+  . $HOME/.token
+fi
+
+if [ -d $HOME/projects/go ] ; then
+  export GOPATH=$HOME/projects/go
+  export PATH=$GOPATH/bin:$PATH
+fi
 
 export XML_CATALOG_FILES="/usr/local/etc/xml/catalog"
 
