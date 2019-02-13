@@ -6,6 +6,7 @@ alias rmorig="find . -name '*.orig' -delete"
 alias goenvoff="unset GOPATH"
 alias gomod="export GO111MODULE=on"
 alias gomodoff="unset GO111MODULE"
+alias m=make
 
 goenv () {
     export GOPATH=${PWD}
