@@ -8,6 +8,7 @@ alias gomod="export GO111MODULE=on"
 alias gomodoff="unset GO111MODULE"
 alias m=make
 alias sqlops="/Applications/Azure\ Data\ Studio.app/Contents/Resources/app/bin/code"
+alias comp="/Applications/Araxis\ Merge.app/Contents/Utilities/compare"
 
 goenv () {
     export GOPATH=${PWD}
