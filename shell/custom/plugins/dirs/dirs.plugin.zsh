@@ -7,6 +7,7 @@ alias goenvoff="unset GOPATH"
 alias gomod="export GO111MODULE=on"
 alias gomodoff="unset GO111MODULE"
 alias m=make
+alias sqlops="/Applications/Azure\ Data\ Studio.app/Contents/Resources/app/bin/code"
 
 goenv () {
     export GOPATH=${PWD}
