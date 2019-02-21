@@ -9,6 +9,9 @@ alias gomodoff="unset GO111MODULE"
 alias m=make
 alias sqlops="/Applications/Azure\ Data\ Studio.app/Contents/Resources/app/bin/code"
 alias comp="/Applications/Araxis\ Merge.app/Contents/Utilities/compare"
+alias glsub="ls -1d */ | xargs -L1d -I{} -- sh -c \"pushd {} > /dev/null ; echo {}; git pull ; popd > /dev/null\""
+
+alias gstsub="ls -1d */ | xargs -L1d -I{} -- sh -c \"pushd {} > /dev/null ; echo {}; git status -s ; popd > /dev/null\""
 
 goenv () {
     export GOPATH=${PWD}
