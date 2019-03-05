@@ -12,6 +12,7 @@ alias comp="/Applications/Araxis\ Merge.app/Contents/Utilities/compare"
 alias glsub="ls -1d */ | xargs -L1d -I{} -- sh -c \"pushd {} > /dev/null ; echo {}; git pull ; popd > /dev/null\""
 
 alias gstsub="ls -1d */ | xargs -L1d -I{} -- sh -c \"pushd {} > /dev/null ; echo {}; git status -s ; popd > /dev/null\""
+alias gbrsub="ls -1d */ | xargs -L1d -I{} -- sh -c \"pushd {} > /dev/null ; echo {}; git status | head -n 1; echo \"\"; popd > /dev/null\""
 
 goenv () {
     export GOPATH=${PWD}
