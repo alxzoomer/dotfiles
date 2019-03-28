@@ -13,6 +13,7 @@ alias glsub="ls -1d */ | xargs -L1d -I{} -- sh -c \"pushd {} > /dev/null ; echo 
 
 alias gstsub="ls -1d */ | xargs -L1d -I{} -- sh -c \"pushd {} > /dev/null ; echo {}; git status -s ; popd > /dev/null\""
 alias gbrsub="ls -1d */ | xargs -L1d -I{} -- sh -c \"pushd {} > /dev/null ; echo {}; git status | head -n 1; echo \"\"; popd > /dev/null\""
+alias grepos="ls -1d */ | xargs -L1d -I{} -- sh -c \"pushd {} > /dev/null ; echo \\\"gcl \\\$(git config --get remote.origin.url) {}\\\" ; popd > /dev/null\""
 
 alias c="code ."
 
