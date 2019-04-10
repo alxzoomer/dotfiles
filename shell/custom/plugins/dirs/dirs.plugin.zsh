@@ -17,6 +17,8 @@ alias grepos="ls -1d */ | xargs -L1d -I{} -- sh -c \"pushd {} > /dev/null ; echo
 
 alias c="code ."
 
+alias dnsr="sudo killall -HUP mDNSResponder"
+
 goenv () {
     export GOPATH=${PWD}
     echo $PWD
