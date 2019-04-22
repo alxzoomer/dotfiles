@@ -19,6 +19,10 @@ alias c="code ."
 
 alias dnsr="sudo killall -HUP mDNSResponder"
 
+alias avpe="EDITOR=\"code -w -n\" ANSIBLE_VAULT_PASSWORD_FILE=/Users/alexeyn/projects/automation/playbooks-hv/ansible-vault-pass-prod ansible-vault edit"
+
+alias avp="EDITOR=\"code -w -n\" ANSIBLE_VAULT_PASSWORD_FILE=/Users/alexeyn/projects/automation/playbooks-hv/ansible-vault-pass-prod ansible-vault"
+
 goenv () {
     export GOPATH=${PWD}
     echo $PWD
