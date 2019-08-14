@@ -111,3 +111,4 @@ let g:buffergator_split_size = 10
 let g:buffergator_suppress_keymaps = 1
 map <Leader>b :BuffergatorToggle<CR>
 
+Plugin 'wakatime/vim-wakatime'

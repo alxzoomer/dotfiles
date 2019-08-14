@@ -23,6 +23,8 @@ alias avpe="EDITOR=\"code -w -n\" ANSIBLE_VAULT_PASSWORD_FILE=/Users/alexeyn/pro
 
 alias avp="EDITOR=\"code -w -n\" ANSIBLE_VAULT_PASSWORD_FILE=/Users/alexeyn/projects/automation/playbooks-hv/ansible-vault-pass-prod ansible-vault"
 
+alias lzd='lazydocker'
+
 goenv () {
     export GOPATH=${PWD}
     echo $PWD
