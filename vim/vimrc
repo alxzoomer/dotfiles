@@ -30,7 +30,7 @@ set winfixwidth
 
 "Plugin 'dracula/vim'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'CSApprox'
+"Plugin 'CSApprox'
 Plugin 'mileszs/ack.vim'
 Plugin 'bling/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
