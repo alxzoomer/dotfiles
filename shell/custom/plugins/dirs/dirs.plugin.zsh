@@ -73,3 +73,8 @@ pk () {
 
 }
 
+curltxt () {
+if [ $1 ] ; then
+curl -s $1 | pandoc -f html -t plain
+fi
+}
