@@ -91,6 +91,8 @@ git clone https://github.com/denysdovhan/spaceship-prompt.git $DOTFILES_ROOT/she
 git clone https://github.com/bhilburn/powerlevel9k.git $DOTFILES_ROOT/shell/custom/themes/powerlevel9k
 # ZSH autosuggestion custom plugin
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $DOTFILES_ROOT/shell/custom/plugins/zsh-autosuggestions
+# ZSH zsh-syntax-highlighting
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $DOTFILES_ROOT/shell/custom/plugins/zsh-syntax-highlighting
 # ZSH peco history plugin
 git clone https://github.com/jimeh/zsh-peco-history.git $DOTFILES_ROOT/shell/custom/plugins/zsh-peco-history
 # VIM Vundle plugin
