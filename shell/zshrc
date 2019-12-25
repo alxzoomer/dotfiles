@@ -224,11 +224,7 @@ if [ -d "~/.pyenv/bin" ] ; then
   eval "$(pyenv virtualenv-init -)"
 fi
 
-<<<<<<< HEAD
 export PATH="/usr/local/sbin:$HOME/.dotnet/tools:$PATH"
-=======
-export PATH="/usr/local/sbin:${HOME}/.dotnet/tools:$PATH"
->>>>>>> b31700e54b498c3bc553c7a18035a0705371c91d
 
 export MINIKUBE_WANTUPDATENOTIFICATION=false
 export MINIKUBE_WANTREPORTERRORPROMPT=false
