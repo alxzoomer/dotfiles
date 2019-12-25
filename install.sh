@@ -110,5 +110,7 @@ if [ -d "$HOME/.vim/bundle/Vundle.vim" ] ; then
 fi
 
 # Final step change default shell to ZSH
+if [ "${LINUX_ID}" != "alpine" ] ; then 
 echo "Switch shell to ZSH"
 chsh -s $(which zsh)
+fi
