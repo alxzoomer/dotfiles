@@ -4,7 +4,6 @@ OS=$(~/dotfiles/utils/detectos.sh)
 
 [[ $UID = 0 ]] && ZSH_DISABLE_COMPFIX=true
 
-# History options
 HISTSIZE=10000000
 SAVEHIST=10000000
 
@@ -98,7 +97,7 @@ ZSH_CUSTOM=$HOME/.custom
 # Add wisely, as too many plugins slow down shell startup.
 # Mac OS only
 if [ "${OS}" = "OSX" ] ; then
-  plugins=(git osx pgex dirs docker docker-compose nvm yarn tmux zsh-autosuggestions fasd zsh-peco-history pyenv rbenv vscode jenv golang z kubectl wakatime zsh-syntax-highlighting)
+  plugins=(git osx bundler pgex dirs docker docker-compose nvm yarn tmux zsh-autosuggestions fasd zsh-peco-history pyenv rbenv vscode jenv golang z kubectl zsh-syntax-highlighting)
   # Original MacBookPro plugin set
   # plugins=(asdf git bundler osx rake ruby railsex pgex heroku dirs docker docker-compose nvm tmux zsh-autosuggestions fasd zsh-peco-history)
 fi
@@ -225,7 +224,11 @@ if [ -d "~/.pyenv/bin" ] ; then
   eval "$(pyenv virtualenv-init -)"
 fi
 
+<<<<<<< HEAD
 export PATH="/usr/local/sbin:$HOME/.dotnet/tools:$PATH"
+=======
+export PATH="/usr/local/sbin:${HOME}/.dotnet/tools:$PATH"
+>>>>>>> b31700e54b498c3bc553c7a18035a0705371c91d
 
 export MINIKUBE_WANTUPDATENOTIFICATION=false
 export MINIKUBE_WANTREPORTERRORPROMPT=false
@@ -238,7 +241,7 @@ POWERLEVEL9K_RPROMPT_ON_NEWLINE=false
 POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
 POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=" "
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs root_indicator ssh background_jobs node_version nvm virtualenv pyenv rbenv)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs root_indicator ssh background_jobs node_version virtualenv pyenv rbenv)
 if [ "${ITERM_PROFILE}" = "Default Lite Theme" ] ; then
   # POWERLEVEL9K_COLOR_SCHEME='dark'
   POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='grey70'
