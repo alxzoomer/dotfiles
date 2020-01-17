@@ -25,6 +25,8 @@ alias avp="EDITOR=\"code -w -n\" ANSIBLE_VAULT_PASSWORD_FILE=/Users/alexeyn/proj
 
 alias lzd='lazydocker'
 
+alias vmw1rdpssh='ssh -L 3389:10.10.0.21:3389 virtgw.hv -N'
+
 goenv () {
     export GOPATH=${PWD}
     echo $PWD
