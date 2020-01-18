@@ -57,7 +57,8 @@ Plugin 'dhruvasagar/vim-zoom'
 
 Plugin 'easymotion/vim-easymotion'
 
-call vundle#end() 
+Plugin 'junegunn/vim-peekaboo'
+call vundle#end()
 
 "filetype plugin indent on
 
