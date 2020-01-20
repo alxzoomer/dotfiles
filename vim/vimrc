@@ -111,5 +111,9 @@ let g:buffergator_viewport_split_policy = 'B'
 let g:buffergator_split_size = 10
 let g:buffergator_suppress_keymaps = 1
 map <Leader>b :BuffergatorToggle<CR>
-
+map <Leader>to :BuffergatorTabsOpen<CR>
+map <Leader>gb :BuffergatorMruCyclePrev<CR>
+map <Leader>gB :BuffergatorMruCycleNext<CR>
+map <Leader><UP> :BuffergatorMruCyclePrev leftabove sbuffer<CR>
+map <Leader><DOWN> :BuffergatorMruCyclePrev rightbelow sbuffer<CR>
 " Plugin 'wakatime/vim-wakatime'
