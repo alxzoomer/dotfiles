@@ -48,7 +48,7 @@ Plugin 'honza/vim-snippets'
 " PowerShell highliting
 Plugin 'https://github.com/PProvost/vim-ps1.git'
 Plugin 'ntpeters/vim-better-whitespace'
-"Plugin 'nathanaelkane/vim-indent-guides'
+Plugin 'nathanaelkane/vim-indent-guides'
 
 Plugin 'posva/vim-vue'
 Plugin 'digitaltoad/vim-pug'
@@ -116,4 +116,8 @@ map <Leader>gb :BuffergatorMruCyclePrev<CR>
 map <Leader>gB :BuffergatorMruCycleNext<CR>
 map <Leader><UP> :BuffergatorMruCyclePrev leftabove sbuffer<CR>
 map <Leader><DOWN> :BuffergatorMruCyclePrev rightbelow sbuffer<CR>
-" Plugin 'wakatime/vim-wakatime'
+
+if filereadable(expand("$HOME/.wakatime.cfg"))
+  Plugin 'wakatime/vim-wakatime'
+endif
+
