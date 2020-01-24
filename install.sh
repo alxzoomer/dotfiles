@@ -8,7 +8,7 @@ if [ -z $OSTYPE ] ; then
 fi
 
 case "$OSTYPE" in
-  darwin*)  OS=OSX ;; 
+  darwin*)  OS=OSX ;;
   linux*)   OS=LINUX ;;
   Linux*)   OS=LINUX ;;
   *)        OS=unknown ;;
@@ -35,7 +35,7 @@ if [ "${OS}" = "LINUX" ] ; then
       sudo yum -y install file mc vim
       # Note: uncomment for SF development
       #sudo yum groupinstall -y 'Development Tools'
-      #sudo yum -y install libcap-devel texi2html texinfo 
+      #sudo yum -y install libcap-devel texi2html texinfo
 
       # Download source RPM zsh 5.5.1 from Fefora Core repo
       #curl http://dl.fedoraproject.org/pub/fedora/linux/updates/28/Everything/SRPMS/Packages/z/zsh-5.5.1-1.fc28.src.rpm --output ~/zsh-5.5.1-1.fc28.src.rpm
@@ -81,6 +81,7 @@ if [ "${OS}" = "OSX" ] ; then
   brew install zsh
   brew install peco
   brew install vim
+  brew cask install font-jetbrains-mono
 fi
 
 # Dotfiles itself
@@ -110,7 +111,7 @@ if [ -d "$HOME/.vim/bundle/Vundle.vim" ] ; then
 fi
 
 # Final step change default shell to ZSH
-if [ "${LINUX_ID}" != "alpine" ] ; then 
+if [ "${LINUX_ID}" != "alpine" ] ; then
 echo "Switch shell to ZSH"
 chsh -s $(which zsh)
 fi
