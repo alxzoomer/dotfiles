@@ -1,5 +1,5 @@
 set nocompatible
-
+set encoding=UTF-8
 "colorscheme zenburn
 "let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
@@ -27,7 +27,7 @@ Plugin 'scrooloose/nerdcommenter'
 " set guioptions-=L
 " Keep NERDTree window fixed between multiple toggles
 set winfixwidth
-
+Plugin 'ryanoasis/vim-devicons'
 "Plugin 'dracula/vim'
 Plugin 'ctrlpvim/ctrlp.vim'
 "Plugin 'CSApprox'
@@ -93,7 +93,7 @@ syntax on
 "colorscheme dracula
 
 " Line number
-set relativenumber
+" set relativenumber
 set number
 
 " Fix remap ru keyboard
