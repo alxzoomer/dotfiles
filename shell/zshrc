@@ -108,7 +108,8 @@ fi
 
 # Linux only
 if [ "${OS}" = "LINUX" ] ; then
-  plugins=(git linux railsex pgex heroku dirs docker docker-compose tmux zsh-autosuggestions zsh-peco-history z)
+#  plugins=(git railsex pgex heroku dirs docker docker-compose tmux zsh-autosuggestions zsh-peco-history z)
+  plugins=(git railsex pgex dirs docker docker-compose tmux zsh-autosuggestions zsh-peco-history z zsh-syntax-highlighting)
 fi
 
 source $ZSH/oh-my-zsh.sh
