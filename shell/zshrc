@@ -50,6 +50,7 @@ export ZSH=$HOME/.oh-my-zsh
 if [ "${TERM_PROGRAM}" = "vscode" ] || [ "${TERM_PROGRAM}" = "Apple_Terminal" ] ; then
   ZSH_THEME="spaceship"
 else
+  POWERLEVEL9K_MODE="nerdfont-complete"
   ZSH_THEME="powerlevel9k/powerlevel9k"
 fi
 
