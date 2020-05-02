@@ -259,20 +259,22 @@ export MINIKUBE_HOME=$HOME
 export CHANGE_MINIKUBE_NONE_USER=true
 export KUBECONFIG=$HOME/.kube/config
 
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_RPROMPT_ON_NEWLINE=false
-POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
-POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=" "
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_RPROMPT_ON_NEWLINE=false
+# POWERLEVEL9K_MULTILINE_FIRST_PROMPT_PREFIX=""
+# POWERLEVEL9K_MULTILINE_LAST_PROMPT_PREFIX=" "
 POWERLEVEL9K_CARRIAGE_RETURN_ICON=""
 POWERLEVEL9K_FAIL_ICON=""
 POWERLEVEL9K_NODE_ICON=""
-POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable)
-POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs root_indicator ssh background_jobs node_version virtualenv pyenv rbenv)
+# POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir dir_writable)
+# POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status vcs root_indicator ssh background_jobs node_version virtualenv pyenv rbenv)
 if [ "${ITERM_PROFILE}" = "Default Lite Theme" ] ; then
   # POWERLEVEL9K_COLOR_SCHEME='dark'
   POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='grey70'
   POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='grey7'
 fi
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
