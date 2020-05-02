@@ -17,6 +17,7 @@ declare -a FILES_TO_SYMLINK=(
   'shell/tmux.conf'
   'shell/psqlrc'
   'shell/tmux-powerlinerc'
+  'shell/p10k.zsh'
   'shell/custom.sh:.tmux/themes/tmux-powerline/themes/custom.sh'
 
   'mc/hotlist:.config/mc/hotlist'
@@ -35,7 +36,7 @@ declare -a DIRECTORIES_TO_SYMLINK=(
 
 get_from_name() {
   local from_name=$(printf "%s" "$1"  | sed -En "s/(.*):.*/\1/p")
-  if [ -z $from_name ] ; then 
+  if [ -z $from_name ] ; then
     echo "$1"
   else
     echo "$from_name"
@@ -44,7 +45,7 @@ get_from_name() {
 
 get_to_name() {
   local to_name=$(printf "%s" "$1" | sed -En "s/.*:(.*)/\1/p")
-  if [ -z $to_name ] ; then 
+  if [ -z $to_name ] ; then
     echo ".$(basename $1)"
   else
     echo "$to_name"

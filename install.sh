@@ -90,6 +90,8 @@ git clone https://github.com/alxzoomer/dotfiles.git $DOTFILES_ROOT
 git clone https://github.com/denysdovhan/spaceship-prompt.git $DOTFILES_ROOT/shell/custom/themes/spaceship-prompt
 # Powerlevel9k theme for Oh my ZSH
 git clone https://github.com/bhilburn/powerlevel9k.git $DOTFILES_ROOT/shell/custom/themes/powerlevel9k
+# Powerlevel10k theme for Oh my ZSH
+git clone --depth=1 https://github.com/romkatv/powerlevel10k.git $DOTFILES_ROOT/shell/custom/themes/powerlevel10k
 # ZSH autosuggestion custom plugin
 git clone https://github.com/zsh-users/zsh-autosuggestions.git $DOTFILES_ROOT/shell/custom/plugins/zsh-autosuggestions
 # ZSH zsh-syntax-highlighting

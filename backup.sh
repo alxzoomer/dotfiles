@@ -10,6 +10,7 @@ declare -a FILES_TO_SYMLINK=(
   'shell/tmux.conf'
   'shell/psqlrc'
   'shell/tmux-powerlinerc'
+  'shell/p10k.zsh'
   'shell/custom.sh:.tmux/themes/tmux-powerline/themes/custom.sh'
 
   'mc/hotlist:.config/mc/hotlist'
