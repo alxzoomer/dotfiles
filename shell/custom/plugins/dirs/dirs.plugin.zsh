@@ -1,7 +1,11 @@
 alias prj="cd ~/projects"
 alias spr="cd ~/projects/steritech-portal"
 #alias spr="cd ~/projects/mountain-khakis"
-alias meld="/Applications/Meld.app/Contents/MacOS/Meld"
+
+if [ "$(uname)" = "Darwin" ] ; then
+  alias meld="/Applications/Meld.app/Contents/MacOS/Meld"
+fi
+
 alias rmorig="find . -name '*.orig' -delete"
 alias goenvoff="unset GOPATH"
 alias gomod="export GO111MODULE=on"
