@@ -122,7 +122,7 @@ ZSH_CUSTOM=$HOME/.custom
 # Add wisely, as too many plugins slow down shell startup.
 # Mac OS only
 if [ "${OS}" = "OSX" ] ; then
-  plugins=(git osx bundler pgex dirs docker docker-compose nvm yarn tmux zsh-autosuggestions fasd zsh-peco-history pyenv rbenv vscode jenv golang z kubectl zsh-syntax-highlighting)
+  plugins=(dotenv git osx bundler pgex dirs docker docker-compose nvm yarn tmux zsh-autosuggestions fasd zsh-peco-history pyenv rbenv vscode jenv golang z kubectl zsh-syntax-highlighting)
   # Original MacBookPro plugin set
   # plugins=(asdf git bundler osx rake ruby railsex pgex heroku dirs docker docker-compose nvm tmux zsh-autosuggestions fasd zsh-peco-history)
 fi
