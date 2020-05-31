@@ -61,6 +61,7 @@ Plugin 'junegunn/vim-peekaboo'
 call vundle#end()
 
 "filetype plugin indent on
+filetype plugin on
 
 " Airline config
 let g:airline_powerline_fonts = 1
