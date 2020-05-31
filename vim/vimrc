@@ -58,6 +58,8 @@ Plugin 'dhruvasagar/vim-zoom'
 Plugin 'easymotion/vim-easymotion'
 
 Plugin 'junegunn/vim-peekaboo'
+Plugin 'junegunn/fzf'
+Plugin 'junegunn/fzf.vim'
 call vundle#end()
 
 "filetype plugin indent on
@@ -123,3 +125,4 @@ if filereadable(expand("$HOME/.wakatime.cfg"))
 endif
 
 set showcmd
+set rtp+=/usr/local/bin/fzf
