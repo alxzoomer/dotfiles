@@ -90,7 +90,8 @@ let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
 
 " Buttons remap
 map <C-n> :NERDTreeToggle<CR>
-
+map <ESC>f :bnext<CR>
+map <ESC>b :bprevious<CR>
 " Syntax on by default
 syntax on
 "colorscheme dracula
