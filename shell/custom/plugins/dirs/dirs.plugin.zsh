@@ -1,3 +1,4 @@
+alias p="cd /mnt/c/projects"
 alias prj="cd ~/projects"
 alias spr="cd ~/projects/steritech-portal"
 #alias spr="cd ~/projects/mountain-khakis"
