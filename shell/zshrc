@@ -235,7 +235,7 @@ if [ "${OS}" = "OSX" ] ; then
   # Android SDK Root
   export ANDROID_SDK_ROOT="$HOME/Library/Android/sdk"
   export PATH="$ANDROID_SDK_ROOT/platform-tools:$PATH"
-
+  export PATH=$PATH:/Applications/Araxis\ Merge.app/Contents/Utilities
   #export PATH="/usr/local/opt/postgresql@9.4/bin:$PATH"
 
   #source $HOME/.asdf/asdf.sh
@@ -251,7 +251,7 @@ if [ -d "~/.pyenv/bin" ] ; then
   if which pyenv-virtualenv-init > /dev/null; then eval "$(pyenv virtualenv-init -)"; fi
 fi
 
-export PATH="/usr/local/bin:/usr/local/sbin:$HOME/.local/bin:$HOME/.dotnet/tools:$PATH"
+export PATH="$HOME/.cargo/bin:/usr/local/bin:/usr/local/sbin:$HOME/.local/bin:$HOME/.dotnet/tools:$PATH"
 
 export MINIKUBE_WANTUPDATENOTIFICATION=false
 export MINIKUBE_WANTREPORTERRORPROMPT=false
