@@ -62,6 +62,7 @@ Plugin 'junegunn/fzf'
 Plugin 'junegunn/fzf.vim'
 call vundle#end()
 
+let g:snipMate = { 'snippet_version' : 1 }
 "filetype plugin indent on
 filetype plugin on
 
