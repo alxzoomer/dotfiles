@@ -14,12 +14,14 @@
   trustExitCode = true
 [diff]
 #	tool = diffmerge
-  tool = bcomp
+  tool = meld
 [difftool]
   prompt = false
+[difftool "araxis"]
+tool = araxis
 [difftool "meld"]
   trustExitCode = true
-  cmd = open -W -a Meld --args \"$LOCAL\" \"$REMOTE\"
+  cmd = open -W -a Meld --args \"$LOCAL\" \"$PWD/$REMOTE\"
 [difftool "diffmerge"]
   cmd = /usr/local/bin/diffmerge \"$LOCAL\" \"$REMOTE\"
 [merge]
@@ -40,3 +42,11 @@
 [difftool "bcomp"]
   trustExitCode = true
   cmd = "/usr/local/bin/bcomp" \"$LOCAL\" \"$REMOTE\"
+[gui]
+	fontui = -family \"JetBrainsMono Nerd Font\" -size 13 -weight normal -slant roman -underline 0 -overstrike 0
+	fontdiff = -family \"JetBrains Mono Medium\" -size 11 -weight normal -slant roman -underline 0 -overstrike 0
+[pull]
+	rebase = false
+[user]
+	name = Alexey Nikitin
+	email = alexeyn@cqg.com
